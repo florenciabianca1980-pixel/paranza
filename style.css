@@ -1,7 +1,3 @@
-/* ==========================
-   PARANZA
-========================== */
-
 *{
     margin:0;
     padding:0;
@@ -9,24 +5,15 @@
 }
 
 body{
-
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f3f3f3;
-
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f4f4;
 }
 
-
-/* ==========================
-   CABECERA
-========================== */
+/* CABECERA */
 
 header{
-
-    background:#062247;
-    color:white;
-
+    background:#08264b;
 }
-
 
 /* Barra superior */
 
@@ -38,18 +25,15 @@ header{
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
+
+    justify-content:space-between;
 
     padding:18px 35px;
 
 }
 
-
-/* ==========================
-   LOGO
-========================== */
+/* LOGO */
 
 .logo{
 
@@ -61,7 +45,6 @@ header{
 
 }
 
-
 .logo img{
 
     width:58px;
@@ -70,45 +53,33 @@ header{
 
 }
 
-
 .logo span{
 
-    font-family:Georgia, "Times New Roman", serif;
-
     color:white;
+
+    font-family:Georgia,serif;
 
     font-size:46px;
 
     letter-spacing:2px;
 
-    line-height:1;
-
 }
-
-
-/* P más grande */
 
 .logo span::first-letter{
 
-    font-size:62px;
+    font-size:68px;
 
 }
 
-
-/* ==========================
-   MENU
-========================== */
+/* MENÚ */
 
 nav{
 
     display:flex;
 
-    gap:34px;
-
-    align-items:center;
+    gap:32px;
 
 }
-
 
 nav a{
 
@@ -120,10 +91,9 @@ nav a{
 
     font-weight:bold;
 
-    transition:.25s;
+    transition:.3s;
 
 }
-
 
 nav a:hover{
 
@@ -131,21 +101,19 @@ nav a:hover{
 
 }
 
-
-/* ==========================
-   BUSCADOR
-========================== */
+/* BUSCADOR */
 
 .busqueda{
 
-    font-size:24px;
+    color:white;
+
+    font-size:22px;
 
     cursor:pointer;
 
-    transition:.25s;
+    transition:.3s;
 
 }
-
 
 .busqueda:hover{
 
@@ -153,14 +121,9 @@ nav a:hover{
 
 }
 
-
-/* ==========================
-   LINEAS NARANJAS
-========================== */
+/* LINEAS */
 
 .linea{
-
-    width:100%;
 
     height:2px;
 
@@ -168,72 +131,40 @@ nav a:hover{
 
 }
 
-
-/* ==========================
-   SLOGAN
-========================== */
+/* SLOGAN */
 
 .slogan{
 
-    background:#062247;
+    background:#08264b;
+
+    color:white;
 
     text-align:center;
 
-    padding:12px 0;
-
-    color:white;
+    padding:12px;
 
     font-size:14px;
 
     letter-spacing:2px;
 
-    font-weight:600;
-
 }
-
 
 .slogan span{
 
     color:#ff7a00;
 
-    margin:0 18px;
+    margin:0 15px;
 
 }
 
+/* CONTENIDO */
 
-/* ==========================
-   HERO
-========================== */
+main{
 
-.hero{
+    max-width:1600px;
 
-    background:white;
+    margin:40px auto;
 
-    height:650px;
-
-}
-
-
-/* ==========================
-   RESPONSIVE
-========================== */
-
-@media(max-width:1200px){
-
-.topbar{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-nav{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
+    min-height:700px;
 
 }
