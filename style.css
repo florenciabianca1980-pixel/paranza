@@ -1,3 +1,8 @@
+/* ===================================================
+   PARANZA
+   ESTILOS GENERALES
+=================================================== */
+
 *{
     margin:0;
     padding:0;
@@ -5,23 +10,32 @@
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f4f4;
+    font-family:'Montserrat',sans-serif;
+    background:#f2f4f7;
+    color:#222;
 }
 
-/* CABECERA */
+/* ===================================================
+   CABECERA
+=================================================== */
 
 header{
-    background:#08264b;
+    width:100%;
+    background:#0a2b54;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
-/* Barra superior */
+/* ===================================================
+   BARRA SUPERIOR
+=================================================== */
 
 .topbar{
 
-    max-width:1700px;
+    max-width:1750px;
 
     margin:auto;
+
+    height:110px;
 
     display:flex;
 
@@ -29,10 +43,13 @@ header{
 
     justify-content:space-between;
 
-   padding:20px 40px;
+    padding:0 40px;
+
 }
 
-/* LOGO */
+/* ===================================================
+   LOGO
+=================================================== */
 
 .logo{
 
@@ -40,42 +57,71 @@ header{
 
     align-items:center;
 
-    gap:15px;
+    flex-shrink:0;
 
 }
 
 .logo img{
-    width:78px;
-    height:78px;
+
+    width:74px;
+
+    height:74px;
+
     object-fit:contain;
 
-    display:block;
+    margin-right:18px;
+
+    transition:.35s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.08);
 
 }
 
 .logo span{
 
+    font-family:'Cinzel',serif;
+
     color:white;
 
-    font-family:Georgia,serif;
+    font-size:54px;
 
-    font-size:46px;
+    font-weight:500;
 
     letter-spacing:2px;
+
+    line-height:1;
+
+    user-select:none;
 
 }
 
 .logo span::first-letter{
-    font-size:58px;
+
+    font-size:88px;
+
 }
 
-/* MENÚ */
+/* ===================================================
+   MENÚ
+=================================================== */
 
 nav{
 
     display:flex;
 
-    gap:32px;
+    align-items:center;
+
+    justify-content:center;
+
+    gap:34px;
+
+    flex:1;
+
+    margin-left:70px;
 
 }
 
@@ -87,9 +133,15 @@ nav a{
 
     font-size:14px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    transition:.3s;
+    letter-spacing:.7px;
+
+    position:relative;
+
+    transition:.30s;
+
+    white-space:nowrap;
 
 }
 
@@ -99,15 +151,53 @@ nav a:hover{
 
 }
 
-/* BUSCADOR */
+/* Línea inferior animada */
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:2px;
+
+    background:#ff7a00;
+
+    transition:.30s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+nav a.activo{
+
+    color:#ff7a00;
+
+}
+
+/* ===================================================
+   BUSCADOR
+=================================================== */
 
 .busqueda{
 
     color:white;
 
-    font-size:22px;
+    font-size:26px;
 
     cursor:pointer;
+
+    margin-left:35px;
 
     transition:.3s;
 
@@ -117,33 +207,43 @@ nav a:hover{
 
     color:#ff7a00;
 
+    transform:scale(1.15);
+
 }
 
-/* LINEAS */
+/* ===================================================
+   LÍNEAS NARANJAS
+=================================================== */
 
 .linea{
 
-    height:2px;
+    width:100%;
+
+    height:1px;
 
     background:#ff7a00;
 
 }
 
-/* SLOGAN */
+/* ===================================================
+   SLOGAN
+=================================================== */
 
 .slogan{
 
-    background:#08264b;
+    background:#0a2b54;
 
     color:white;
 
     text-align:center;
 
-    padding:12px;
+    font-size:13px;
 
-    font-size:14px;
+    font-weight:600;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
+
+    padding:14px 0;
 
 }
 
@@ -151,18 +251,124 @@ nav a:hover{
 
     color:#ff7a00;
 
-    margin:0 15px;
+    margin:0 18px;
 
 }
 
-/* CONTENIDO */
+/* ===================================================
+   CONTENIDO
+=================================================== */
 
 main{
 
-    max-width:1600px;
+    max-width:1700px;
 
     margin:40px auto;
 
-    min-height:700px;
+    min-height:800px;
+
+}
+
+/* ===================================================
+   EFECTOS SUAVES
+=================================================== */
+
+header{
+
+    animation:aparecer .5s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:1500px){
+
+    .topbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        gap:20px;
+
+        margin:20px 0 0 0;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .logo{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .logo span{
+
+        font-size:36px;
+
+    }
+
+    .logo span::first-letter{
+
+        font-size:60px;
+
+    }
+
+    nav{
+
+        gap:16px;
+
+    }
+
+    nav a{
+
+        font-size:12px;
+
+    }
+
+    .slogan{
+
+        font-size:11px;
+
+        letter-spacing:1px;
+
+        padding:10px;
+
+    }
 
 }
