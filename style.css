@@ -447,3 +447,79 @@ header{
     color:#e3e9f0;
 
 }
+
+.meta{
+
+    display:flex;
+
+    gap:24px;
+
+    flex-wrap:wrap;
+
+    color:#cbd6e3;
+
+    font-size:13px;
+
+    margin-top:22px;
+
+    margin-bottom:26px;
+
+}
+
+.boton-noticia{
+
+    display:inline-block;
+
+    width:max-content;
+
+    background:white;
+
+    color:#08264b;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton-noticia:hover{
+
+    background:#ff7a00;
+
+    color:white;
+
+}
+
+.panel-recientes{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+}
+
+.panel-recientes h2{
+
+    color:#08264b;
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+    padding-bottom:12px;
+
+    border-bottom:2px solid #ff7a00;
+
+}
+
+
