@@ -51,6 +51,10 @@ header{
 
     height:58px;
 
+    object-fit:contain;
+
+    display:block;
+
 }
 
 .logo span{
