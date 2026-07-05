@@ -391,3 +391,59 @@ header{
     gap:35px;
 
 }
+
+.noticia-destacada{
+
+    background:#08264b;
+
+    color:white;
+
+    border-radius:18px;
+
+    min-height:520px;
+
+    padding:55px;
+
+}
+
+.categoria{
+
+    display:inline-block;
+
+    background:#ff7a00;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.noticia-destacada h1{
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.noticia-destacada p{
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    color:#e3e9f0;
+
+}
