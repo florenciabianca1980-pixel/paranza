@@ -376,3 +376,18 @@ header{
 /* ===================================================
    BLOQUE NOTICIA DESTACADA
 =================================================== */
+.bloque-portada{
+
+    max-width:1700px;
+
+    margin:45px auto;
+
+    padding:0 40px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+}
